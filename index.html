@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+
+    <!--
+    Screen 1: STARTING SCREEN
+    -->
+<!-- <div class="app"> -->
+
+    <div class="screen mainscreen" id="start-screen">
+        <div class="card">
+            <img class="banner-img" src="cute.avif" alt="javaScriptLogo">
+            <h1>TAKE THIS QUIZ TO TEST YOUR TECH MIND!!</h1>
+            <h2>All the best!</h2>
+            <p class="quiz-info">10 Questions &nbsp;|&nbsp; 1 Point Each</p>
+            <button class="btn" id="start-btn">Start Quiz</button>
+        </div>
+    </div>
+
+    <!-- ADD SUBJECT SCREEN -->
+
+    <div class="screen hidden" id="subject-screen">
+        <div class="subjectcard" id="c-card">
+            <h1>C</h1>
+        </div>
+        <div class="subjectcard" id="html-card">
+            <h1>HTML</h1>
+        </div>
+        <div class="subjectcard" id="css-card">
+            <h1>CSS</h1>
+        </div>
+        <div class="subjectcard" id="javascript-card">
+            <h1>Javascript</h1>
+        </div>
+        <div class="subjectcard" id="java-card">
+            <h1>Java</h1>
+        </div>
+        <div class="subjectcard" id="dbms-card">
+            <h1>DBMS</h1>
+        </div>
+        <div class="subjectcard" id="os-card">
+            <h1>Operating System</h1>
+        </div>
+        
+      </div>
+
+    <!--
+    SCREEN 2: QUESTION SCREEN
+    -->
+    <div class="screen hidden" id="question-screen">
+        <div class="card">
+            
+            <div class="progress-bar">
+    <div class="progress-fill" id="progress-fill"></div>
+</div>
+
+<p class="question-count" id="question-count"></p> 
+<span class="timer-circle">
+    <span id="time">15</span>
+</span>
+<h2 class="question-text" id="question-text"></h2>
+<div class="options" id="option-container"></div>
+<button class="btn hidden" id="next-btn"> Next</button>
+        </div>
+    </div>
+
+    <!-- SCREEN 3: RESULT SCREEN-->
+     <div class="screen hidden" id="result-screen">
+        <div class="card">
+            <div class="result-emoji" id="result-emoji">💸</div>
+            <h1 class="result-title" id="result-title">Well Done!</h1>
+            <p class="result-score" id="result-score">Your Scored 10 out of 10!</p>
+            <p class="result-msg" id="result-msg">Great!</p>
+            <button class="btn" id="restart-btn">Try Again</button>
+        </div>
+     </div>
+<!-- </div> -->
+     <footer>
+    <p>© 2026 Quiz App | Designed & Developed by <strong>Harvir Kaur</strong></p>
+</footer>
+
+     <script src="script.js"></script>
+</body>
+</html>

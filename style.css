@@ -1,0 +1,259 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:#d09696;
+    min-height:100vh;
+    display:flex;
+    align-items :center;
+    justify-content:center;
+    padding: 20px;
+}
+
+.screen{
+    width: 100%;
+    max-width: 500px;
+    }
+
+.mainscreen{
+    transition:transform 0.2s ease ,box-shadow 0.2s ease;
+}
+.mainscreen:hover{
+    transform:scale(1.05);
+    box-shadow: 4px 2px 2px 4px #a73e3e;
+}
+.hidden{
+    display:none;
+}
+
+/* subject screen */
+
+#subject-screen{
+    width:100%;
+    max-width:300px;
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+    margin:0;
+}
+
+#subject-screen.hidden{
+    display:none;
+}
+
+.subjectcard{
+    background-color: #7b0d1e;
+    color:#ffffff;
+    border-radius: 20px;
+    text-align: center;
+    padding: 30px;
+    transition: transform 0.2s ease,background-color 0.2s ease;
+}
+
+.subjectcard:hover{
+    transform: scale(1.03);
+    background-color: #b5172f;
+}
+
+.subjectcard h1{
+    color:white;
+}
+
+.card{
+    background-color:#ffffff;
+    border:16px;
+    padding:40px 30px;
+    text-align:center;
+    box-shadow:0 20px 60px rgba(0,0,0,0.4);
+    min-height:400px;
+    border:1px solid #ddd;
+    border-radius:16px;
+}
+.banner-img{
+    width:100px;
+    max-width:100px;
+    object-fit:cover;
+    margin-bottom:20px;
+}
+h1{
+    font-size:30px;
+    color:#1a1a1a;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+h2{
+    font-size:20px;
+    color:#1a1a1a;
+    line-height:1.6;
+    margin-bottom:20px;
+}
+.quiz-info{
+    color:#4f4444;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+.btn{
+    display:inline-block;
+    background-color:#ab5b5b;
+    color:#fff;
+    border:none;
+    font-size:16px;
+    font-weight:bold;
+    padding:14px 36px;
+    border-radius:5px;
+    text-decoration:none;
+    transition:background-color 0.3s ease;
+    cursor:pointer;
+    margin-top:20px;
+}
+.btn:hover{
+    background-color:#551e1e;
+}
+.progress-bar{
+    width:100%;
+    height:5px;
+    background-color:#e5e7ee;
+    border-radius:10px;
+    /* overflow:hidden; */
+    margin-bottom:20px;
+}
+.progress-fill{
+    height:100%;
+    background-color:#121111;
+    width:10%;
+    border-radius:10px;
+    transition:width 0.3s ease;
+}
+.question-count{
+    color:#888888;
+    font-size:14px;
+    margin-bottom:14px;
+    text-align:left;
+}
+
+
+.result-emoji{
+    font-size:66px;
+    margin-bottom:20px;
+}
+
+.result-msg{
+    font-size:16px;
+    color:#555555;
+    margin-bottom:5px;
+}
+.result-score{
+    font-size:25px;
+    color:#2c2a2a;
+    margin-bottom:20px;
+    font-weight:bold;
+}
+
+.options{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    text-align: left;
+
+}
+.option-btn{
+    background-color: #f9f9f9;
+    border:2px solid #e5e7ee;
+    border-radius: 8px;
+    padding:12px 16px;
+    font-size:16px;
+    color:#2c2a2a;
+    cursor:pointer;
+    text-align: left;
+    transition: all 0.2s ease;
+}
+.option-btn:hover{
+    border-color: #d09696;
+    background-color: #d372b4;
+}
+
+.option-btn.correct{
+    border-color:#298f30;
+    background-color: #a0bda6;
+    color:green;
+}
+.option-btn.incorrect{
+    border-color:#cc391b;
+    background-color: #c38f96;
+    color:red;
+}
+
+.option-btn:disabled{
+    cursor:not-allowed;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    font-size: 14px;
+}
+.timer-circle{
+    width: 40px;
+    height: 40px;
+    border: 2px solid #4CAF50;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #4CAF50;
+    margin-left: auto;
+   
+}
+
+.top-bar{
+    display:flex;
+    justify-content:flex-end;
+    margin-bottom:15px;
+}
+
+
+#theme-toggle{
+    width:30px;
+    height:30px;
+    border:none;
+    border-radius:50%;
+    font-size:22px;
+    cursor:pointer;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+    transition:0.3s;
+    margin-bottom: 30px;
+}
+
+#theme-toggle:hover{
+    transform:scale(1.1);
+}
+
+body.dark{
+    background:#1c1b1d;
+    color:rgb(234, 223, 223);
+}
+
+body.dark .card{
+    background:#353333;
+    color:white;
+}
+
+body.dark .option-btn{
+    background:#969191;
+    color:white;
+}
+
+body.dark #theme-toggle{
+    background:#333;
+    color:#ffd700;
+}
