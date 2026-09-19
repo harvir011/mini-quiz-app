@@ -1,7 +1,7 @@
 # 🧠 Mini Quiz App
 
 <p align="center">
-  <img src="images/banner.jpg" alt="Mini Quiz App Banner" width="100%">
+  <img src="cute.avif" alt="Mini Quiz App Banner" width="100%">
 </p>
 
 <p align="center">
