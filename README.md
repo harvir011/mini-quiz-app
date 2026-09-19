@@ -65,19 +65,19 @@ Mini-Quiz-App/
 ### 🏠 Home Page
 
 <p align="center">
-  <img src="images/banner.jpg" alt="Home Page" width="800">
+  <img src="images/banner.png" alt="Home Page" width="800">
 </p>
 
 ### 📝 Quiz Page
 
 <p align="center">
-  <img src="images/quiz.jpg" alt="Quiz Page" width="800">
+  <img src="images/quiz.png" alt="Quiz Page" width="800">
 </p>
 
 ### 🏆 Result Page
 
 <p align="center">
-  <img src="images/result.jpg" alt="Result Page" width="800">
+  <img src="images/result.png" alt="Result Page" width="800">
 </p>
 
 ## 🚀 Future Improvements
